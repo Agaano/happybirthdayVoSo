@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
+
+* {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color: #2f2f2f;
+    background-image: url('background.svg');
+    background-repeat: repeat;
+    background-size: 250px;
+}
+
+.splash {
+    width: 100%;
+    height: 500px;
+    background-color: #814726;
+    object-fit: cover;
+    object-position: 0% 50%;
+    border-bottom: 5px solid #bf4c00aa;
+}
+
+.splash2 {
+    border-top: 5px solid #bf4c00aa;
+    border-bottom: 5px solid #1400cc;
+}
+
+.initial-block {
+    box-sizing: border-box;
+    background-color: #ff4c4c34;
+    backdrop-filter: blur(15px);
+    width: 600px;
+    text-align: center;
+    border: 5px solid #bf4c00aa;
+    padding-block: 35px;
+    margin-inline: auto;
+    transform: translate(0,-50%);
+    animation: 3s infinite ease-in-out flowing; 
+}
+.initial-block2 {
+    box-sizing: border-box;
+    background-color: #6d4cff63;
+    backdrop-filter: blur(15px);
+    width: 600px;
+    text-align: center;
+    border: 5px solid #0300bfaa;
+    padding-block: 35px;
+    margin-inline: auto;
+    transform: translate(0,-50%);
+    animation: 3s infinite ease-in-out flowing; 
+}
+
+.achivements-block:nth-of-type(2) {
+    background-color: #1f1f1f;
+    background-image: url("background2.svg");
+    background-repeat: repeat;
+    background-size: 250px;
+}
+
+.block {
+    backdrop-filter: blur(15px);
+    width: fit-content;
+    padding-block: 35px;
+    padding-inline: 25px;
+    margin-block: 90px;
+}
+
+.flowing {
+    animation: 3s infinite ease-in-out reverse-flowing;
+}
+
+.reverse-flowing {
+    animation: 3s infinite ease-in-out flowing;
+    /* animation-direction: reverse; */
+}
+
+.rotating {
+    animation: 10s infinite none rotating;
+    /* animation-direction: reverse; */
+}
+
+.purple {
+    background-color: #461d44;
+    border: 5px solid #db0084;
+}
+
+.purple b {
+    color: #db0084;
+}
+
+
+.orange {
+    background-color: #683716;
+    border: 5px solid #ff4c4ccb;
+}
+
+.orange b {
+    color: #ff4c4ccb;
+}
+
+
+.red {
+    background-color: #4b1010;
+    border: 5px solid #b10000;
+}
+
+.red b {
+    color: #b10000;
+}
+
+.yellow {
+    background-color: #685216;
+    border: 5px solid #D3A527;
+}
+
+.yellow b {
+    color: #D3A527;
+}
+
+
+.achivements-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.junior-right {
+    position: relative;
+    right: 15%;
+}
+
+.middle-right {
+    position: relative;
+    right: 25%;
+}
+
+.major-right {
+    position: relative;
+    right: 35%;
+}
+
+.junior-left {
+    position: relative;
+    left: 15%;
+}
+
+.middle-left {
+    position: relative;
+    left: 25%;
+}
+
+.major-left {
+    position: relative;
+    left: 35%;
+}
+
+b {
+    color: #B10000;
+}
+
+@keyframes flowing {
+    0%, 100% {
+        transform: translate(0,-55%);
+    }
+    
+    50% {
+        transform: translate(0,-45%);
+    }
+}
+
+
+@keyframes reverse-flowing {
+    0%, 100% {
+        transform: translate(0,-45%);
+    }
+    
+    50% {
+        transform: translate(0,-55%);
+    }
+}
+
+@keyframes rotating {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
